@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-import modelo.Clase;
+import modelo.Aula;
 
 /**
  *
@@ -40,9 +40,9 @@ public class AppCollection {
         System.out.println(cursoList);
         */
         Curso curso1 = new Curso("java",30, new ArrayList<>());
-        curso1.addClase(new Clase("Arraylist"));
-        curso1.addClase(new Clase("List"));
-        curso1.addClase(new Clase("LinkedList"));
+        curso1.addClase(new Aula("Arraylist"));
+        curso1.addClase(new Aula("List"));
+        curso1.addClase(new Aula("LinkedList"));
         
         ArrayList<Curso> cursos = new ArrayList<>();
         cursos.add(curso1);

@@ -5,6 +5,7 @@
 package modelo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -15,13 +16,13 @@ public class Curso /*implements  Comparable<Curso>*/{
     
     private  String nombre;
     private  int codigo;
-    private List<Clase> claseList = new ArrayList();
+    private List<Aula> claseList = new ArrayList();
 
     public Curso(String nombre, int codigo) {
         this.nombre = nombre;
         this.codigo = codigo;
     }
-    public Curso(String nombre, int codigo, List<Clase> claseList) {
+    public Curso(String nombre, int codigo, List<Aula> claseList) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.claseList = claseList;
@@ -54,15 +55,15 @@ public class Curso /*implements  Comparable<Curso>*/{
         return  this.nombre.compareTo(o.getNombre());
     */
 
-    public List<Clase> getClaseList() {
-        return claseList;
+    public List<Aula> getClaseList() {
+        return Collections.unmodifiableList(claseList);
     }
 
-    public void setClaseList(List<Clase> claseList) {
+    public void setClaseList(List<Aula> claseList) {
         this.claseList = claseList;
     }
     
-    public void addClase(Clase clase){
+    public void addClase(Aula clase){
         this.claseList.add(clase);
     }
     

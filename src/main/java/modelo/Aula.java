@@ -8,12 +8,12 @@ package modelo;
  *
  * @author MXGALLEGO
  */
-public class Clase /*implements  Comparable<Curso>*/{
+public class Aula /*implements  Comparable<Curso>*/{
     
     private  String nombre;
     //private  int codigo;
     
-    public Clase(String nombre) {
+    public Aula(String nombre) {
         this.nombre = nombre;
         
     }
