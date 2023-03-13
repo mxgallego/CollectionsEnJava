@@ -4,11 +4,13 @@
 
 package com.mycompany.appcollection;
 
+import modelo.Curso;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import modelo.Clase;
 
 /**
  *
@@ -17,7 +19,7 @@ import java.util.stream.Collectors;
 public class AppCollection {
 
     public static void main(String[] args) {
-       
+        /*
         Curso curso1 = new Curso("java",30);
         Curso curso2 = new Curso("javaScript",10);
         Curso curso3 = new Curso("Php",20);
@@ -36,6 +38,16 @@ public class AppCollection {
         System.out.println(cursos);
         List<Curso> cursoList = cursos.stream().filter(curso -> !curso.getNombre().equalsIgnoreCase("PHP")).sorted(Comparator.comparing(Curso::getNombre).reversed()).collect(Collectors.toList());
         System.out.println(cursoList);
+        */
+        Curso curso1 = new Curso("java",30, new ArrayList<>());
+        curso1.addClase(new Clase("Arraylist"));
+        curso1.addClase(new Clase("List"));
+        curso1.addClase(new Clase("LinkedList"));
+        
+        ArrayList<Curso> cursos = new ArrayList<>();
+        cursos.add(curso1);
+        
+        System.out.println(cursos.get(0).getClaseList());
         
     }
 }
