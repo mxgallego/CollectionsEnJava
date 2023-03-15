@@ -15,16 +15,16 @@ import java.util.List;
 public class Curso /*implements  Comparable<Curso>*/{
     
     private  String nombre;
-    private  int codigo;
+    private  int tiempo;
     private List<Aula> claseList = new ArrayList();
 
     public Curso(String nombre, int codigo) {
         this.nombre = nombre;
-        this.codigo = codigo;
+        this.tiempo = codigo;
     }
     public Curso(String nombre, int codigo, List<Aula> claseList) {
         this.nombre = nombre;
-        this.codigo = codigo;
+        this.tiempo = codigo;
         this.claseList = claseList;
     }
     
@@ -36,12 +36,12 @@ public class Curso /*implements  Comparable<Curso>*/{
         this.nombre = nombre;
     }
 
-    public int getCodigo() {
-        return codigo;
+    public int getTiempo() {
+        return tiempo;
     }
 
     public void setCodigo(int codigo) {
-        this.codigo = codigo;
+        this.tiempo = codigo;
     }
 
     @Override
