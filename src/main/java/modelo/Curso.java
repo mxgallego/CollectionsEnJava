@@ -16,13 +16,13 @@ public class Curso /*implements  Comparable<Curso>*/{
     
     private  String nombre;
     private  int tiempo;
-    private List<Aula> claseList = new ArrayList();
+    private List<Alumno> claseList = new ArrayList();
 
     public Curso(String nombre, int codigo) {
         this.nombre = nombre;
         this.tiempo = codigo;
     }
-    public Curso(String nombre, int codigo, List<Aula> claseList) {
+    public Curso(String nombre, int codigo, List<Alumno> claseList) {
         this.nombre = nombre;
         this.tiempo = codigo;
         this.claseList = claseList;
@@ -55,19 +55,19 @@ public class Curso /*implements  Comparable<Curso>*/{
         return  this.nombre.compareTo(o.getNombre());
     */
 
-    public List<Aula> getClaseList() {
+    public List<Alumno> getClaseList() {
         return Collections.unmodifiableList(claseList);
     }
 
-    public void setClaseList(List<Aula> claseList) {
+    public void setClaseList(List<Alumno> claseList) {
         this.claseList = claseList;
     }
     
-    public void addClase(Aula clase){
+    public void addClase(Alumno clase){
         this.claseList.add(clase);
     }
     
+    //public void addAlumno(Alumno alumno){ this.alumno.add(alumno);}
     
-    
-    
+    //public boolean verificarAlumno(Alumno alumno){ return this.alumno.contains(alumno);}
 }

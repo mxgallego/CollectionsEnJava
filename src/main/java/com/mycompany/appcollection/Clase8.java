@@ -7,7 +7,7 @@ package com.mycompany.appcollection;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import modelo.Aula;
+import modelo.Alumno;
 import modelo.Curso;
 
 /**

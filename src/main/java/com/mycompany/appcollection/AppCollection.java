@@ -6,11 +6,7 @@ package com.mycompany.appcollection;
 
 import modelo.Curso;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
-import modelo.Aula;
+import modelo.Alumno;
 
 /**
  *
@@ -40,9 +36,9 @@ public class AppCollection {
         System.out.println(cursoList);
         */
         Curso curso1 = new Curso("java",30, new ArrayList<>());
-        curso1.addClase(new Aula("Arraylist"));
+        /*curso1.addClase(new Aula("Arraylist"));
         curso1.addClase(new Aula("List"));
-        curso1.addClase(new Aula("LinkedList"));
+        curso1.addClase(new Aula("LinkedList"));*/
         
         ArrayList<Curso> cursos = new ArrayList<>();
         cursos.add(curso1);

@@ -6,7 +6,7 @@ package com.mycompany.appcollection;
 
 import java.util.ArrayList;
 import java.util.List;
-import modelo.Aula;
+import modelo.Alumno;
 import modelo.Curso;
 
 /**
@@ -16,11 +16,11 @@ import modelo.Curso;
 public class Clase7 {
     public static void main(String[] args) {
         Curso curso1 = new Curso("java",30, new ArrayList<>());
-        curso1.addClase(new Aula("Arraylist"));
-        curso1.addClase(new Aula("List"));
-        curso1.addClase(new Aula("LinkedList"));
+       // curso1.addClase(new Aula("Arraylist"));
+        //curso1.addClase(new Aula("List"));
+        //curso1.addClase(new Aula("LinkedList"));
         
-        List<Aula> aulaList = curso1.getClaseList();
+        List<Alumno> aulaList = curso1.getClaseList();
         //aulaList.add(new Aula("Inmutable"));
         ArrayList<Curso> cursos = new ArrayList<>();
         cursos.add(curso1);

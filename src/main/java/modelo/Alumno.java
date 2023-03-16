@@ -8,16 +8,15 @@ package modelo;
  *
  * @author MXGALLEGO
  */
-public class Aula /*implements  Comparable<Curso>*/{
+public class Alumno /*implements  Comparable<Curso>*/{
     
     private  String nombre;
-    //private  int codigo;
-    
-    public Aula(String nombre) {
+    private  int codigo;
+
+    public Alumno(String nombre, int codigo) {
         this.nombre = nombre;
-        
+        this.codigo = codigo;
     }
-    
 
     public String getNombre() {
         return nombre;
@@ -27,6 +26,16 @@ public class Aula /*implements  Comparable<Curso>*/{
         this.nombre = nombre;
     }
 
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+        
+    
+
    
 
    
@@ -35,6 +44,12 @@ public class Aula /*implements  Comparable<Curso>*/{
     public String toString(){
         return  this.nombre;
     }
+    @Override
+    public boolean equals(Object obj){
+        Alumno alumno = (Alumno)obj;
+        return super.equals(alumno.getNombre());
+    }
+    
     /*
     @Override
     public int compareTo(Curso o) {
